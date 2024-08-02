@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title__website">My Kaktus</title>
+    <!-- ========== favicon ==========  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <!-- ========== css link ==========  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- ========== remix icon cdn ==========  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ========== Header & Navbar ==========  -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="navbar__logo">
+                <i class="ri-cactus-fill"></i>Kaktus
+            </a>
+            <div class="navbar__menu" id="navbar-menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#beranda" class="navbar__link active-link">Beranda</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#varian" class="navbar__link">Varian</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#toko" class="navbar__link">Toko</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#perawatan" class="navbar__link">Perawatan</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#kontak" class="navbar__link">Kontak</a>
+                    </li>
+                </ul>
+                <!-- close btn  -->
+                <div class="btn__close" id="btn-close">
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+            <div class="navbar__extra">
+                <!-- user  -->
+                <i class="ri-user-fill btn__user" id="btn-user"></i>
+                <!-- cart  -->
+                <i class="ri-shopping-cart-line btn__cart" id="btn-cart"></i>
+                <!-- btn menu  -->
+                <i class="ri-menu-fill btn__menu" id="btn-menu"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== login==========  -->
+    <div class="login" id="login">
+        <form action="#" class="form__login">
+            <h2 class="login__title">Log In</h2>
+            <div class="form__grup">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" name="email" id="email" class="login__input" placeholder="Masukan email"
+                        required>
+                </div>
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" name="password" id="password" class="login__input"
+                        placeholder="Masukan password" required>
+                </div>
+            </div>
+            <div>
+                <p class="btn__signUp">Create any account ?
+                    <a href="#">Sign Up</a>
+                </p>
+                <a href="#" class="btn__forgot-password">Forgot Password</a>
+                <button type="submit" class="btn__login">Log In</button>
+            </div>
+        </form>
+        <i class="ri-close-line close__icon" id="btn__login-close"></i>
+    </div>
+    <!-- ========== Cart ==========  -->
+    <div class="cart" id="cart">
+        <div class="menu__cart" id="menu-cart">
+            <h2 class="cart__ttile">Keranjang Anda</h2>
+            <ul class="cart__list">
+                <li class="cart__item">
+                    <img src="./images/shop-cactus-1.png" alt="image" class="cart__img">
+                    <div class="cart__info">
+                        <h3 class="kaktus__title-cart">Gymnocalycium
+                            Cactus</h3>
+                        <span class="kaktus__price-cart">250K</span>
+                    </div>
+                    <button class="btn__delete">
+                        <i class="ri-delete-bin-fill"></i>
+                    </button>
+                </li>
+                <li class="cart__item">
+                    <img src="./images/shop-cactus-2.png" alt="image" class="cart__img">
+                    <div class="cart__info">
+                        <h3 class="kaktus__title-cart">Gymnocalycium
+                            Cactus</h3>
+                        <span class="kaktus__price-cart">250K</span>
+                    </div>
+                    <button class="btn__delete">
+                        <i class="ri-delete-bin-fill"></i>
+                    </button>
+                </li>
+                <li class="cart__item">
+                    <img src="./images/shop-cactus-3.png" alt="image" class="cart__img">
+                    <div class="cart__info">
+                        <h3 class="kaktus__title-cart">Gymnocalycium
+                            Cactus</h3>
+                        <span class="kaktus__price-cart">250K</span>
+                    </div>
+                    <button class="btn__delete">
+                        <i class="ri-delete-bin-fill"></i>
+                    </button>
+                </li>
+            </ul>
+            <!-- close btn  -->
+            <div class="btn__close-cart" id="btn-closeCart">
+                <i class="ri-close-fill"></i>
+            </div>
+            <button class="btn__checkout">Check Out
+                <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+    </div>
+    <!-- ========== Main ==========  -->
+    <main class="main">
+        <!-- ========== Beranda Section ==========  -->
+        <section class="beranda section" id="beranda">
+            <div class="beranda__container container grid">
+                <img src="images/home-cactus.png" alt="image" class="home__img">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        TANAMAN <br>
+                        <span>HIAS</span> UNTUK <br>
+                        RUMAH ANDA<br>
+                    </h1>
+                    <p class="home__deskripsi">
+                        Kami mendesain tanaman hias untuk Anda
+                        rumah di rumah untuk gaya asli dan
+                        kualitas yang tidak akan Anda temukan di tempat lain.
+                    </p>
+                    <a class="home__button" href="#toko"><i class="ri-arrow-right-line"></i>PERGI KE TOKO</a>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Varian Section ==========  -->
+        <section class="varian section" id="varian">
+            <div class="varian__container container grid">
+                <h2 class="section__title">
+                    VARIAN BARU UNTUK <br> RUMAH ANDA
+                </h2>
+                <p class="section__description">
+                    Pilih tanaman hias baru untuk rumah
+                    dekorasi dan mendapatkan suasana
+                    harmoni dan kesegaran.
+                </p>
+                <div class="varian__content grid">
+                    <div class="varian__card">
+                        <img src="images/new-cactus-1.png" alt="image" class="varian__img">
+                        <h3 class="varian__judul">Gymnocalycium Cactus</h3>
+                    </div>
+                    <div class="varian__card">
+                        <img src="images/new-cactus-2.png" alt="image" class="varian__img">
+                        <h3 class="varian__judul">Lily Pad Succulent</h3>
+                    </div>
+                    <div class="varian__card">
+                        <img src="images/new-cactus-3.png" alt="image" class="varian__img">
+                        <h3 class="varian__judul">Rebutia Cactus</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Toko Section ==========  -->
+        <section class="toko section" id="toko">
+            <div class="toko__container container">
+                <div class="toko__data">
+                    <h2 class="section__title">TANAMAN TERBAIK</h2>
+                </div>
+                <div class="toko__content grid">
+                    <article class="toko__card">
+                        <img src="images/shop-cactus-1.png" alt="image" class="toko__img">
+                        <div class="toko__card-info">
+                            <h3 class="kaktus__title">Gymnocalycium <br> Cactus</h3>
+                            <span class="kaktus__price">250K</span>
+                            <button class="button__toko">
+                                <i class="ri-shopping-bag-4-fill"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="toko__card">
+                        <img src="images/shop-cactus-2.png" alt="image" class="toko__img">
+                        <div class="toko__card-info">
+                            <h3 class="kaktus__title">Echeveria <br> Succulent</h3>
+                            <span class="kaktus__price">250K</span>
+                            <button class="button__toko">
+                                <i class="ri-shopping-bag-4-fill"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="toko__card">
+                        <img src="images/shop-cactus-3.png" alt="image" class="toko__img">
+                        <div class="toko__card-info">
+                            <h3 class="kaktus__title">Ferocactus <br> Kaktus</h3>
+                            <span class="kaktus__price">250K</span>
+                            <button class="button__toko">
+                                <i class="ri-shopping-bag-4-fill"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="toko__card">
+                        <img src="images/shop-cactus-4.png" alt="image" class="toko__img">
+                        <div class="toko__card-info">
+                            <h3 class="kaktus__title">Key Lime Pie <br> Succulent</h3>
+                            <span class="kaktus__price">250K</span>
+                            <button class="button__toko">
+                                <i class="ri-shopping-bag-4-fill"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="toko__card">
+                        <img src="images/shop-cactus-5.png" alt="image" class="toko__img">
+                        <div class="toko__card-info">
+                            <h3 class="kaktus__title">Melocactus <br> Cactus</h3>
+                            <span class="kaktus__price">250K</span>
+                            <button class="button__toko">
+                                <i class="ri-shopping-bag-4-fill"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Care Section ==========  -->
+        <section class="perawatan section" id="perawatan">
+            <div class="perawatan__container container">
+                <h2 class="section__title">
+                    PERAWATAN DAN KESEHATAN <br> KAKTUS ANDA
+                </h2>
+                <div class="perawatan__row grid">
+                    <img src="images/care-cactus.png" alt="image" class="perawatan__img">
+                    <div>
+                        <div class="perawatan__item">
+                            <i class="ri-shield-check-fill"></i>
+                            <p>Di musim dingin, tambahkan air sebulan sekali
+                                dan selama musim panas lakukan saat
+                                tanah sangat kering.</p>
+                        </div>
+                        <div class="perawatan__item">
+                            <i class="ri-shield-check-fill"></i>
+                            <p>Memiliki drainase yang baik agar kaktus dapat tumbuh subu tidak menumpuk air.</p>
+                        </div>
+                        <div class="perawatan__item">
+                            <i class="ri-shield-check-fill"></i>
+                            <p>Tempatkan kaktus atau sukulen anda di
+                                lokasi dengan cahaya tidak langsung.</p>
+                        </div>
+                        <div class="perawatan__item">
+                            <i class="ri-shield-check-fill"></i>
+                            <p>Jangan menyiram lebih dari yang diperlukan, seperti
+                                itu dapat mengumpulkan terlalu banyak air dan
+                                tanaman akan membusuk.</p>
+                        </div>
+                        <div class="perawatan__item">
+                            <i class="ri-shield-check-fill"></i>
+                            <p>Jangan sampai terkena suhu tinggi, seperti
+                                tanaman sukulen tidak disukai
+                                ekstrem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Contant Section ==========  -->
+        <section class="kontak section" id="kontak">
+            <div class="kontak__container container">
+                <h2 class="section__title">
+                    ANDA INGIN KAKTUS <br> HUBUNGI KAMI
+                </h2>
+                <div class="kontak__konten grid">
+                    <div>
+                        <div class="kontak__data">
+                            <h3 class="kontak__title">Kirim Pesan ke kami</h3>
+                            <div class="kontak__media-sosial">
+                                <a href="https://api.whatsapp.com/send?phone=1234567890&text=Halo, informasi lebih lanjut!"
+                                    target="_blank">
+                                    <i class="ri-whatsapp-fill"></i>
+                                </a>
+                                <a href="mailto:kaktus@gmail.com" target="_blank">
+                                    <i class="ri-mail-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="kontak__data">
+                            <h3 class="kontak__title">Hubungi Kami</h3>
+                            <div class="kontak__info">
+                                <p>+62 1234567890<br>
+                                    +62 0123</p>
+                            </div>
+                        </div>
+                        <div class="kontak__data">
+                            <h3 class="kontak__title">Lokasi Kami</h3>
+                            <div class="kontak__info">
+                                <address>Jl.Melati - Kota Ende - Nusa Tengara Timur <br>
+                                    Indonesia.</address>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kontak__gps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22300.999647663946!2d121.64034301545927!3d-8.851915003886777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dad58c1b3ad5199%3A0xd425b8adaf73f2e2!2sEnde%2C%20Kel.%20Rukunlima%2C%20Kec.%20Ende%20Sel.%2C%20Kabupaten%20Ende%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1712039025433!5m2!1sid!2sid"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="info__gps"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ========== Footer Section ==========  -->
+    <footer class="footer" id="footer">
+        <div class="footer__container container grid">
+            <div class="footer__data">
+                <a href="#beranda" class="footer__logo">
+                    <i class="ri-cactus-fill"></i>Kaktus
+                </a>
+                <p class="footer__deskripsi">Pilih tanaman terbaik <br> untuk rumah Anda.</p>
+            </div>
+            <div class="footer__content grid">
+                <div class="footer__row">
+                    <h3 class="footer__judul">Menu</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#tentang" class="footer__link">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="#produk" class="footer__link">Produk Lain</a>
+                        </li>
+                        <li>
+                            <a href="#fitur" class="footer__link">Fitur</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__row">
+                    <h3 class="footer__judul">Informasi</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#blog&berita" class="footer__link">Blog & Berita</a>
+                        </li>
+                        <li>
+                            <a href="#kontak" class="footer__link">Hubungi Kami</a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="footer__link">FaQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__row">
+                    <h3 class="footer__judul">Media Sosial</h3>
+                    <div class="media__sosial-footer">
+                        <a href="https://www.facebook.com/" target="_blank" class="medsos__links">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="medsos__links">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="medsos__links">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="copyright__text">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Create By Lionis | All Right Reserved 🔥
+        </p>
+    </div>
+    <!-- ==========scrollUp========== -->
+    <a href="#" class="scroolUP" id="scroolUP">
+        <i class="ri-arrow-up-double-line"></i>
+    </a>
+    <!-- ==========scrool reveal cdn link==========  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ==========js link==========  -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
