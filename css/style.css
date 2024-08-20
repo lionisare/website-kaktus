@@ -215,7 +215,7 @@ img {
   z-index: -1;
   transition: 0.4s;
 }
-/* == Header stycky == */
+/* == activate link == */
 .active-link {
   color: var(--color-1);
 }
